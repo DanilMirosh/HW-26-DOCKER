@@ -21,6 +21,7 @@ services:
     depends_on:
       pg:
         condition: service_healthy
+    command: flask db upgrade
   pg:
     image: postgres:latest
     environment:
