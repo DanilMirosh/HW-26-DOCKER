@@ -10,4 +10,3 @@ jobs:
         run: docker build -t prohormitrich/skypro_hw26:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
       - name: docker push
         run: docker push prohormitrich/skypro_hw26:$GITHUB_REF_NAME-$GITHUB_RUN_ID
-
